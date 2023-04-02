@@ -1,0 +1,15 @@
+.topwrapper {
+  text-align: center;
+  background-color: #6255a5;
+  color: white;
+  padding-bottom: 2%;
+  margin-bottom: -1%;
+  justify-content: center;
+}
+.fa-book-open {
+  font-size: 75px;
+  margin-top: 40px;
+}
+.winner {
+  font-size: 20px;
+}

@@ -1,0 +1,124 @@
+.articlewrapper {
+  background-color: #91c95d;
+  padding: 10px 0 10px 0;
+}
+.record_wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  width: 90%;
+  margin: 100px auto;
+  justify-content: space-between;
+}
+
+.record {
+  position: relative;
+  width: 100%;
+  height: 20vh;
+  overflow: hidden;
+  // border:2px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: box-shadow 300ms;
+}
+
+.record-arrow {
+  position: absolute;
+  padding: 3%;
+  img {
+    width: 8%;
+    height: 8%;
+  }
+  background-image: url("http://www.portalguard.com/images/icons/right-arrow.png");
+  transform: translateX(75%);
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.record:hover .record-arrow {
+  transform: translateX(85%);
+  opacity: 1;
+}
+
+.record-display1 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: url("https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1532&q=80");
+  background-size: cover;
+  background-position: center center;
+}
+.record:hover .record-display1 {
+  height: 20%;
+}
+.record-display2 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: url("https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80");
+  background-size: cover;
+  background-position: center center;
+}
+.record:hover .record-display2 {
+  height: 20%;
+}
+.record-display3 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-image: url("https://images.unsplash.com/photo-1581726707445-75cbe4efc586?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80");
+  background-size: cover;
+  background-position: center center;
+}
+.record:hover .record-display3 {
+  height: 20%;
+}
+
+.record-desc {
+  margin: 20px 0 0 10px;
+  h1 {
+    margin: 5px 0;
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+  p {
+    font-size: 0.75em;
+    line-height: 1.4em;
+    color: #666;
+  }
+  opacity: 0;
+  transition: opacity 400ms ease-in-out 190ms;
+}
+
+#record1 {
+  transition: height 700ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+}
+#record2 {
+  transition: height 500ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+}
+#record3 {
+  transition: height 300ms cubic-bezier(0.54, 0.21, 0.18, 1.35);
+}
+
+.record:hover .record-desc {
+  opacity: 1;
+}
+
+.tagline {
+  margin: 50px 0;
+  text-align: center;
+  color: green;
+}
+@media only screen and (min-width: 768px) {
+  .record {
+    height: 30vh;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .record {
+    height: 30vh;
+  }
+}
+@media only screen and (min-width: 1200px) {
+}

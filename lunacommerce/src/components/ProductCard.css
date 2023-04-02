@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+.product-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  grid-row-gap: 50px;
+  margin: 5vh 0 10vh 0;
+  padding: 0;
+}
+.product-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+}
+.header-text {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5vh;
+}
+
+h1 {
+  font-size: 1.7rem;
+  text-transform: capitalize;
+}
+
+.pro-card {
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  height: 500px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.pro-card > figure {
+  width: 90%;
+  margin: 20px auto 0 auto;
+}
+
+.pro-card > figure > img {
+  width: 100%;
+}
+
+.details {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 20px 20px 20px;
+  position: absolute;
+  top: 75%;
+  width: 100%;
+  transition: box-shadow 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+
+.pro-card:hover .details {
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
+  top: 10%;
+}
+
+.details > .min-details,
+.details > .options,
+.details > .options > .options-size,
+.details > .options > .options-colors {
+  margin-bottom: 20px;
+}
+
+.details > .min-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details > .min-details > h1 > span {
+  color: #7b7b7b;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.details > .options h1 {
+  margin-bottom: 5px;
+}
+
+.details > .options ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.details > .options ul li {
+  border-radius: 50%;
+  cursor: pointer;
+  height: 30px;
+  line-height: 30px;
+  margin-right: 5px;
+  text-align: center;
+  width: 30px;
+}
+
+.options-size > ul > li {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.options-size > ul > li:hover {
+  background-color: #192a56;
+}
+
+.options-colors > ul > li {
+  border: none;
+}
+
+.options-colors > ul > li:nth-child(1) {
+  background-color: #ff1;
+}
+
+.options-colors > ul > li:nth-child(2) {
+  background-color: #000;
+}
+
+.options-colors > ul > li:nth-child(3) {
+  background-color: #fb0000;
+}
+
+.options-colors > ul > li:nth-child(4) {
+  background-color: #ff69b4;
+}
+
+.options-colors > ul > li:nth-child(5) {
+  background-color: #192a56;
+}
+
+.btn {
+  background-color: #192a56;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 100%;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+@media only screen and (min-width: 1200px) {
+  .product-card-grid {
+    padding: 0 15vw 0 15vw;
+  }
+}
